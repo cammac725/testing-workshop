@@ -5,6 +5,7 @@ import ItemList from '../item-list'
 test('renders "no items" when the item list is empty', () => {
   const container = document.createElement('div')
   ReactDOM.render(<ItemList items={[]} />, container)
+  // console.log(container.innerHTML)
   expect(container.textContent).toMatch('no items')
 })
 
